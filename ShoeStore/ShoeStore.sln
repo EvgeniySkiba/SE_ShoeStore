@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Photos", "Photos", "{DCD5B4B9-C13E-47C2-A7A8-A0363528800D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeStore", "ShoeStore\ShoeStore.csproj", "{18D8BC2C-A7B8-4FA9-831B-1714E20A5960}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D87C3994-E44F-47D1-B6FF-6017179F7FC4} = {D87C3994-E44F-47D1-B6FF-6017179F7FC4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeStore.Data", "ShoeStore.Data\ShoeStore.Data.csproj", "{D87C3994-E44F-47D1-B6FF-6017179F7FC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18D8BC2C-A7B8-4FA9-831B-1714E20A5960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D8BC2C-A7B8-4FA9-831B-1714E20A5960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D8BC2C-A7B8-4FA9-831B-1714E20A5960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D8BC2C-A7B8-4FA9-831B-1714E20A5960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87C3994-E44F-47D1-B6FF-6017179F7FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87C3994-E44F-47D1-B6FF-6017179F7FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87C3994-E44F-47D1-B6FF-6017179F7FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87C3994-E44F-47D1-B6FF-6017179F7FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

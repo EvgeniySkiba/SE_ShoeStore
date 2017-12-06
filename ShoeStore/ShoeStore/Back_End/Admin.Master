@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ShoeStore.Back_End.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Администрирование</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/base/jquery-ui.css"
+        id="theme" />
+    <link rel="stylesheet" href="../Styles/Default/jquery.fileupload-ui.css" />
+    <link rel="stylesheet" href="../Styles/Default/style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="../Scripts/Default/jquery.iframe-transport.js"></script>
+    <script src="../Scripts/Default/jquery.fileupload.js"></script>
+    <script src="../Scripts/Default/jquery.fileupload-ui.js"></script>
+    <script src="../Scripts/Default/application.js"></script>
+
+     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="float: inherit;">
+        
+        <div>
+            <hr />
+            <div style="margin-left: 200px;">
+                <h2>
+                    Администрирование</h2>
+            </div>
+            <hr />
+        </div>
+        <div style="float:right;padding-right:100px; color:White;">
+         <asp:HyperLink runat=server Text="На сайт" NavigateUrl="~/Default.aspx" />
+        </div>
+
+
+        <br />
+        <div style="float: left;  margin-left: 10px; font-size:14px; width: 200px;">
+            <a title="группы"></a>
+            <asp:HyperLink ID="hplColor" NavigateUrl="~/Back_End/Color.aspx" runat="server">Цвет</asp:HyperLink><br />
+            <asp:HyperLink ID="hplManufactured" NavigateUrl="~/Back_End/Manufacture.aspx" runat="server">Производитель</asp:HyperLink><br />
+            <asp:HyperLink ID="hplMaterial" NavigateUrl="~/Back_End/Material.aspx" runat="server">Материал</asp:HyperLink><br />
+            <asp:HyperLink ID="hplSeason" NavigateUrl="~/Back_End/SeasonalType.aspx" runat="server">Сезон</asp:HyperLink><br />
+            <asp:HyperLink ID="hplSize" NavigateUrl="~/Back_End/Size.aspx" runat="server">Размер</asp:HyperLink><br />
+            <asp:HyperLink ID="hplType" NavigateUrl="~/Back_End/Type.aspx" runat="server">Тип</asp:HyperLink><br />
+            <asp:HyperLink ID="hplProduct" NavigateUrl="~/Back_End/Product.aspx" runat="server">Товары</asp:HyperLink><br />
+        </div>
+        <div style="margin-left: 230px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
